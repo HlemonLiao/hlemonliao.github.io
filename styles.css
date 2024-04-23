@@ -102,7 +102,7 @@ a:active {
   header {
     /* background: ; */
     background: url(forest.jpeg) no-repeat center center fixed;
-    
+    background-color: #6b917e;
   }
   header h1,h2 {
     color: #354f52;
