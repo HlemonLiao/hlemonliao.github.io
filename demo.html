@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opening Animation</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+  #universe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.66;
+    /* animation: rotateUniverse 60s linear infinite; */
+  }
+
+  .star {
+    position: absolute;
+    background: yellow;
+    border-radius: 50%;
+    animation: starRevolution linear infinite;
+    cursor: pointer; /* Add cursor pointer for stars */
+  }
+
+  /* Adjust position and size for each star */
+  #star1 {
+    top: 30%;
+    left: 10%;
+    width: 14px;
+    height: 14px;
+    animation-duration: 15s;
+  }
+
+  #star2 {
+    top: 10%;
+    left: 40%;
+    width: 10px;
+    height: 10px;
+    animation-duration: 20s;
+  }
+
+  /* Add styles for more stars as needed */
+
+  @keyframes rotateUniverse {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes starRevolution {
+    0% {
+      transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+  }
+</style>
+</head>
+<body>
+<div id="universe">
+  <!-- Stars -->
+  <div class="star" id="star1" onclick="showMessage('catch!')"></div>
+  <div class="star" id="star2" onclick="showMessage('catch!')"></div>
+  <!-- Add more stars here -->
+</div>
+<!-- Your website content goes here -->
+
+<script>
+// Function to display message when star is clicked
+function showMessage(message) {
+  alert(message);
+}
+</script>
+</body>
+</html>

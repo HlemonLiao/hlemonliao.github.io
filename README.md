@@ -1,2 +1,1 @@
-# hlemonliao.github.io
-personal websites
+# CISW 17 Midterm Starter Files

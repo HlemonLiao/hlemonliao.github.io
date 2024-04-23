@@ -1,0 +1,282 @@
+/*
+COLOR PALETTE
+Choose a color palette and paste the hex codes here to use below
+https://coolors.co/
+
+#CAD2C5 Ash Gray color for a lighter background
+#ABC4B0 Ash Gray color for a light background
+#618F94 Munsell for link fonts in Ash gray background
+#84A98C Cambridge Green for fonts on a light background
+#2f3e46 Charcoal for fonts on a dark background
+
+*/
+
+
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  /* img {
+    width: 300px;
+  } */
+  a:link {
+    color: #618F94;
+    text-decoration: none;
+    /* background-color: #354f52; */
+    border-radius: 20px;
+}
+  
+  /* visited link */
+a:visited {
+    color: #618F94;
+
+}
+  
+  /* mouse over link */
+a:hover {
+    color: darkslateblue;
+    background-color: darkgrey;
+    border-radius: 15px;
+    text-decoration: none;
+}
+  
+  /* selected link */
+a:active {
+    color: #2f3e46;
+} 
+  h1 {
+    font-size: 5em;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 1.25em;
+  }
+  header h2 {
+    font-size: 2em;
+  }
+  h1, h2 {
+    font-weight: 700;
+    margin: 0;
+  }
+  .content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  .item-details h3 + p {
+    font-style: italic;
+  }
+  .item-details h3 ~ p {
+    margin: 0;
+  }
+  .divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+  }
+  .divider > section:last-of-type {
+    border-bottom: none;
+  }
+  
+  
+  /* Profile
+  ------------------------------------*/
+  header {
+    /* background: ; */
+    background: url(https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center center fixed;
+    color: #354f52;
+  }
+  
+  .text-block {
+    padding: 35px 50px 35px 50px;
+    background-color: #f9f9f9;
+    text-align: justify;
+    opacity: 0.8;
+    /* position: sticky; */
+    border-radius: 5px;
+}
+  
+  /* Projects
+  ------------------------------------*/
+  .projects {
+    background: color(#CAD2C5);
+    color: #354f52;
+    /* margin-bottom: 50px; */
+  }
+  .projects a {
+    color: #84A98C;
+  }
+  .projects .btn {
+    color: #84A98C;
+    /* background: #84A98C; */
+    /* text-decoration: none; */
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .projects .btn:hover {
+    background: #84A98C;
+    color: #f9f9f9;
+  }
+  .project-item {
+    overflow: hidden;
+  }
+  .project-item h3 {
+    margin-top: 0;
+  }
+  
+  /* Education
+  ------------------------------------*/
+  .education {
+    background-color: #ABC4B0;
+    background-position: top right;
+    padding-bottom: 100px;
+  }
+  .education p {
+    width: 60%;
+  }
+  
+  
+  /* Contact Info
+  ------------------------------------*/
+  footer {
+    background-color: #2f3e46;
+    color: white;
+  }
+  .quote {
+    font-style: italic;
+    font-weight: 300;
+    padding: 10px 25px;
+}
+
+  /* .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .contact-list a {
+    padding: 15px;
+    display: inline-block;
+  } */
+  /* Style the logo list */
+.logo-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; /* Distribute logos evenly across the container */
+  align-items: center; /* Center logos vertically */
+  padding: 20px; /* Add some padding */
+}
+
+/* Style the logos */
+.logo-list li {
+  position: relative; /* Position list items relatively */
+}
+
+.logo-list li img {
+  
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+/* Hover effect */
+.logo-list li:hover img {
+  transform: scale(1.1); /* Enlarge the image by 10% on hover */
+}
+
+  li {
+    margin-bottom: 15px; /* Add bottom margin between list items */
+    margin-left: 20px;
+    padding: 10px 10px;
+}
+/* Styles for sections */
+.section {
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  overflow: hidden;
+}
+
+/* Additional styles for animated elements */
+.animated {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Responsive
+------------------------------------*/
+@media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .project-item video {
+    float: left;
+    margin-right: 20px;
+  }
+  #project2 img{
+    float: right;
+    margin-left: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+.logo-list li img {
+  width: 75px; /* Set the width of each logo */
+}
+
+}
+
+@media screen and (max-width:749px){
+  h1 {
+    font-size: 2em;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+  
+  li {
+    font-size: 1em;
+  }
+  /* img {
+    width: 200px;
+  } */
+  .logo-list li img {
+    width: 55px; /* Set the width of each logo */
+  }
+  #scrollimg {
+    width: 100px;
+  }
+}
