@@ -14,6 +14,8 @@ https://coolors.co/
 
 /* Global styles
 ------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Cutive&display=swap');
+
 html {
     box-sizing: border-box;
   }
@@ -58,7 +60,7 @@ a:active {
     color: #2f3e46;
 } 
   h1 {
-    font-size: 5em;
+    font-size: 4.5em;
     line-height: 1;
   }
   h2 {
@@ -99,8 +101,19 @@ a:active {
   ------------------------------------*/
   header {
     /* background: ; */
-    background: url(https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center center fixed;
+    background: url(forest.jpeg) no-repeat center center fixed;
+    
+  }
+  header h1,h2 {
     color: #354f52;
+    font-family: "Bevan", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  header p {
+    font-family: "Cutive", serif;
+  font-weight: 400;
+  font-style: normal;
   }
   
   .text-block {
@@ -120,10 +133,11 @@ a:active {
     /* margin-bottom: 50px; */
   }
   .projects a {
-    color: #84A98C;
+    /* color: #45655D; */
+    background-color: #C3CEBC;
   }
   .projects .btn {
-    color: #84A98C;
+    color: #52796F;
     /* background: #84A98C; */
     /* text-decoration: none; */
     padding: 8px;
@@ -201,7 +215,7 @@ a:active {
 
   li {
     margin-bottom: 15px; /* Add bottom margin between list items */
-    margin-left: 20px;
+    /* margin-left: 20px; */
     padding: 10px 10px;
 }
 /* Styles for sections */
@@ -224,6 +238,17 @@ a:active {
 .visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* footer: name and current date */
+#footername {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 14px;
 }
 /* Responsive
 ------------------------------------*/
@@ -274,7 +299,7 @@ a:active {
     width: 200px;
   } */
   .logo-list li img {
-    width: 55px; /* Set the width of each logo */
+    width: 45px; /* Set the width of each logo */
   }
   #scrollimg {
     width: 100px;

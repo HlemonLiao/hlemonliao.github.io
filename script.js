@@ -59,3 +59,15 @@ function handleScrollAnimations() {
   
   // Call the function to initiate scroll-based animations
   document.addEventListener('DOMContentLoaded', handleScrollAnimations);
+
+  //current date
+  document.addEventListener("DOMContentLoaded", function() {
+    var currentDate = new Date();
+    var day = currentDate.getDate();
+    var month = currentDate.getMonth() + 1; // Month is zero-based
+    var year = currentDate.getFullYear();
+    var formattedDate = month + '-' + day + '-' + year;
+    
+    document.getElementById("currentDate").textContent = formattedDate;
+  });
+  
